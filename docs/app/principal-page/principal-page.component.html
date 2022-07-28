@@ -1,0 +1,37 @@
+<!doctype html>
+<link id = "global-theme" rel="stylesheet" src="../../assets/dark.css">
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>MusicWorld</title>
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body id="body">
+    <div class="topMenu">
+        <div class="grid">
+            <div class="grid-item" (click) = "goToHomePage()">MusicWorld</div>
+            <div class="grid-item Instruments hover-underline-animation" (click) = "goToSelectedPage($event)">Browse by Instruments</div>
+            <div class="grid-item Country hover-underline-animation" (click) = "goToSelectedPage($event)">Browse by Country</div>
+            <div class="grid-item Songs hover-underline-animation" (click) = "goToSelectedPage($event)">Browse by Songs</div>
+            <div class="grid-item">
+                <i id = "icon" class="material-icons" (click) = "changeTheme()" >&#xe518;</i> 
+            </div>
+        </div>
+        <!--Falta incluir centrar verticalmente placeholder da search bar e adicionar icon-->
+        <input type="text" placeholder="Search what you're looking for...">
+    </div>
+    <div id="centerA" class="centerA">
+        <ng-container id="countryMap" *ngComponentOutlet="dummyComponentWorldMap"></ng-container>
+    </div>
+    <div id="centerB" class="centerB">
+        <div id="sideMenu" class="sideMenu">
+            <ng-container *ngComponentOutlet="dummyComponentSideMenu"></ng-container>
+        </div>
+        <div id="contentPage" class="contentPage">
+            <ng-container *ngComponentOutlet="dummyComponent"></ng-container>
+        </div>
+    </div>
+</body>
+</html>
