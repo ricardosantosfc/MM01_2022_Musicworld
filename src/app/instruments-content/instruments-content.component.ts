@@ -28,7 +28,7 @@ export class InstrumentsContentComponent implements OnInit {
       this.currRadioButton = value;
       console.log(value);
       console.log(this.audioCurr.setAttribute("idButtonToChange","new"));//quando se muda o filtro , pode aocntere null pointer exception, atribuir valor default para que n aconteca(assume que existe sempre >=1 instrumento)
-      this.audioCurr.src = 'test.wav'; //sim é estupido, mas é a maneira mais fácil de parar o audio (pause() ou src=null causa problemas)
+      this.audioCurr.src = 'assets/test.wav'; //sim é estupido, mas é a maneira mais fácil de parar o audio (pause() ou src=null causa problemas)
       if(this.instrumentsConntainer!=null){ //limpar grid
        const p= document.getElementsByClassName('grid-item-intruments');
         while(p.length > 0){
