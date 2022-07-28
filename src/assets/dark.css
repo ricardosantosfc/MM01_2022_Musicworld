@@ -1,0 +1,101 @@
+html {
+    background-color: black;
+}
+.container-songc {
+    color:white;
+}
+/*------------------------------------------BODY------------------------------------------*/
+body {
+    color: white;
+}
+
+.topMenu {
+    height: 25%;
+}
+
+.grid {
+    color:white;
+}
+
+.grid-item {
+   
+    color:white;
+}
+
+
+.grid-item:last-child:hover {
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #0fa,
+        0 0 82px #0fa,
+        0 0 92px #0fa,
+        0 0 102px #0fa,
+        0 0 151px #0fa
+}
+
+/*------------------------------------------------------------------------------------------------------------------------*/
+.hover-underline-animation {
+    
+    color: white;
+}
+
+  
+.hover-underline-animation:after {
+   
+    background-color: white;
+   
+}
+
+.hover-underline-animation:hover:after {
+    
+    color:white;
+}
+  
+/*------------------------------------------------------------------------------------------------------------------------*/
+
+
+::placeholder {
+    color: white;
+    
+    
+}
+
+
+.sideMenu {
+    
+    border-right: 1px solid white;
+
+}
+.checkmark {
+   
+    background-color: rgb(255,255,255);
+    
+}
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+.container input:checked ~ .checkmark {
+    background-color: #4d4d4d;
+}
+::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+/* Handle */
+ ::-webkit-scrollbar-thumb {
+     background: white; 
+    
+}
+::-webkit-scrollbar-thumb:hover {
+    background: grey; 
+  }
+
+.instrumentHeader{
+    color : white;
+}
+
+.ItemInstru{
+    
+    font-weight: bolder;
+}

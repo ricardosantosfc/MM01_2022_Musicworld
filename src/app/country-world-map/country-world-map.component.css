@@ -1,0 +1,29 @@
+* {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+}
+
+h1 {
+    font-size: 21px;
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -110%);
+}
+
+#chartdiv {
+    height: 100%;
+    width: 850px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+p {
+    margin: 0;
+    position:absolute;
+    font-size: 12px;
+    bottom: 0;
+    right: 20%;
+}

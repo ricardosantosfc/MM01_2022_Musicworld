@@ -1,0 +1,18 @@
+<h1>Filter Instruments by type:</h1>
+<label class="container">All Instruments
+  <input type="radio" checked="checked" name="radio" value="all" (click) = "switchInstrumentContentComponent($event,0)">
+  <span class="checkmark"></span>
+</label>
+<label class="container">Strings
+  <input type="radio" name="radio" value="strings" (click) = "switchInstrumentContentComponent($event,1)">
+  <span class="checkmark"></span>
+</label>
+<label class="container">Winds
+  <input type="radio" name="radio" value="winds" (click) = "switchInstrumentContentComponent($event,2)">
+  <span class="checkmark"></span>
+</label>
+<label class="container">Percussion
+  <input type="radio" name="radio" value="percussion" (click) = "switchInstrumentContentComponent($event,3)">
+  <span class="checkmark"></span>
+</label>
+
