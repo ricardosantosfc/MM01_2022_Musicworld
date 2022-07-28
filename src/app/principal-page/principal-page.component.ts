@@ -43,7 +43,7 @@ export class PrincipalPageComponent implements OnInit {
     this.getInstrumentsNames();
 
     this.icon = document.getElementById('icon'); 
-    document.getElementById('global-theme')!.setAttribute('href', '../../assets/dark.css');
+    document.getElementById('global-theme')!.setAttribute('href', 'assets/dark.css');
 
     this.centerA = document.getElementById("centerA");
     this.centerB = document.getElementById("centerB");
@@ -94,12 +94,12 @@ export class PrincipalPageComponent implements OnInit {
   changeTheme():void { 
 
     if(this.lightMode==false){
-      document.getElementById('global-theme')!.setAttribute('href', '../../assets/light.css');
+      document.getElementById('global-theme')!.setAttribute('href', 'assets/light.css');
       this.icon!.innerHTML = "&#xef44";
       this.lightMode=true;
       this.currColor = "3px solid black";
     }else{
-      document.getElementById('global-theme')!.setAttribute('href', '../../assets/dark.css');
+      document.getElementById('global-theme')!.setAttribute('href', 'assets/dark.css');
      this.icon!.innerHTML =  "&#xe518";
       this.lightMode=false;
       this.currColor = "3px solid white";

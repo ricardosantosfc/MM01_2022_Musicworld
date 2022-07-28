@@ -20,7 +20,7 @@ gridItemsInstruments: any = null;
   newtype: string = "";
 
   sampleIsPlaying:boolean = false; //para controlo de sons
-  audioCurr: any = new Audio('../../assets/test.wav'); //placeholder para n dar erro
+  audioCurr: any = new Audio('assets/test.wav'); //placeholder para n dar erro
 
   currentInstrument: string = "";
   currentInstrumentDetails: string[] = []; //name, type, country, text, photo, audio

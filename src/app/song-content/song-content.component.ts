@@ -23,7 +23,7 @@ export class SongContentComponent implements OnInit {
   playClicked: any = null; 
   
   public currRadioButton:any = 0;
-  audioCurr = new Audio('../../assets/test.wav');
+  audioCurr = new Audio('assets/test.wav');
 
   constructor(public sharedData: SharedService) { }
 
