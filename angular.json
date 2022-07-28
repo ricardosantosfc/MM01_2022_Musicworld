@@ -37,12 +37,12 @@
                 {
                   "type": "initial",
                   "maximumWarning": "500kb",
-                  "maximumError": "50mb"
+                  "maximumError": "300mb"
                 },
                 {
                   "type": "anyComponentStyle",
                   "maximumWarning": "2kb",
-                  "maximumError": "50mb"
+                  "maximumError": "300mb"
                 }
               ],
               "fileReplacements": [
