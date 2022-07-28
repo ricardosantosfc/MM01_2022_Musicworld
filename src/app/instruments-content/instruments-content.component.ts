@@ -146,7 +146,7 @@ export class InstrumentsContentComponent implements OnInit {
       //--------------------------------------------botao sample  -imgPlay
       var imgPlay = document.createElement("img"+ i);
       imgPlay.id = "cd" + i; //para ir buscar quando clicked
-      imgPlay.style.content= "url('../../assets/play-button.png')"; 
+      imgPlay.style.content= "url('assets/play-button.png')"; 
       imgPlay.style.backgroundSize = "contain";
       imgPlay.style.filter = "invert(1)";
       imgPlay.style.height = "70px";
@@ -191,20 +191,20 @@ export class InstrumentsContentComponent implements OnInit {
              this.audioCurr.pause();
              this.sampleIsPlaying = false;
              this.audioCurr.reload; 
-             document.getElementById(event.target.id)!.style.content = "url('../../assets/play-button.png')"; //alterar o botao 
+             document.getElementById(event.target.id)!.style.content = "url('assets/play-button.png')"; //alterar o botao 
            
             }else{ //clicou noutro botão ou clicou no mesmo botao após ter parado (pelo if acima ou se acabou por si)
               if(this.audioCurr.src != tempAudio.src &&  this.audioCurr.getAttribute("idButtonToChange")!= null){ //quando corre na primeira vez ainda n ha atributo no audiocurr
                 var buttonIdOver = this.audioCurr.getAttribute("idButtonToChange"); // para alterar o botao
                 console.log(buttonIdOver);
                 if(buttonIdOver!="new"){ //para quando há mudança de filtro
-                  document.getElementById(buttonIdOver)!.style.content = "url('../../assets/play-button.png')";
+                  document.getElementById(buttonIdOver)!.style.content = "url('assets/play-button.png')";
                 }
               }
             this.audioCurr.src = clickedSrc; 
             this.sampleIsPlaying = true;
             this.audioCurr.play();
-            document.getElementById(event.target.id)!.style.content = "url('../../assets/stop.png')";
+            document.getElementById(event.target.id)!.style.content = "url('assets/stop.png')";
             this.audioCurr.setAttribute("idButtonToChange", event.target.id); //de modo a conseguir alterar img do botao quando acaba por si, e quando esta a tocar se clica noutro
            }
       }
@@ -222,7 +222,7 @@ export class InstrumentsContentComponent implements OnInit {
       //console.log("ended");
       this.sampleIsPlaying=false;
       var buttonIdOver = this.audioCurr.getAttribute("idButtonToChange"); //
-      document.getElementById(buttonIdOver)!.style.content = "url('../../assets/play-button.png')";
+      document.getElementById(buttonIdOver)!.style.content = "url('assets/play-button.png')";
 
     }
 
